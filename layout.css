@@ -1,0 +1,118 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body {
+        font-family: 'ABeeZee', sans-serif;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-family: 'ABeeZee', sans-serif;
+        color: #000000;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-family: 'Belleza', sans-serif;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* **** splash **** */
+
+    header {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        width: 100vw;
+        padding: 1em;
+        position: fixed/* ligger fast på skærmen */
+    }
+
+    /* **** menu start **** */
+
+    header nav {
+        font-family: 'Open', sans-serif;
+        text-align: right;
+        margin: 0 10vw 0 0;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: red;
+        display: block;
+        padding-left: 10px;
+    }
+
+    header nav a:hover {
+        color: #eee883;
+    }
+
+    @media screen and (min-width: 676px) {
+
+        header nav a {
+            display: inline-block;
+        }
+    }
+
+
+
+    .sectionwrapper {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .column {
+        padding: 0 5px 0 5px;
+        flex-grow: 1;
+        flex-basis: 200px;
+        /* bredden på kolonnen*/
+    }
+
+    .column_content {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .imgikon {
+        width: 5vw;
+    }
+
+    .column_wide {
+        padding: 0 5px 0 5px;
+        flex-basis: 300px;
+        flex-grow: 1;
+        /* bredden på kolonnen*/
+    }
+
+    .column_narrow {
+        padding: 0 5px 0 5px;
+        flex-grow: 1;
+        flex-basis: 200px;
+        /* bredden på kolonnen*/
+    }
+
+
+    .content {
+        align-self: flex-start;
+        flex-basis: 100px;
+        flex-grow: 2;
+        padding: 0 5px 0 5px;
+    }
