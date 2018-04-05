@@ -1,5 +1,5 @@
     * {
-        margin: 0;
+        margin: 0vw 2vw 0vw 2vw;
         padding: 0;
     }
 
@@ -36,7 +36,7 @@
     header {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
         width: 100vw;
-        padding: 1em;
+
         position: fixed/* ligger fast på skærmen */
     }
 
@@ -45,14 +45,14 @@
     header nav {
         font-family: 'Georgia', serif;
         text-align: right;
-        margin: 0 10vw 0 0;
+
     }
 
     header nav a {
         text-decoration: none;
         color: red;
         display: block;
-        padding-left: 10px;
+
     }
 
     header nav a:hover {
@@ -102,14 +102,14 @@
     }
 
     .column_wide {
-        padding: 0 5px 0 5px;
+
         flex-basis: 300px;
         flex-grow: 1;
         /* bredden på kolonnen*/
     }
 
     .column_narrow {
-        padding: 0 5px 0 5px;
+
         flex-grow: 1;
         flex-basis: 200px;
         /* bredden på kolonnen*/
@@ -120,5 +120,5 @@
         align-self: flex-start;
         flex-basis: 100px;
         flex-grow: 2;
-        padding: 0 5px 0 5px;
+
     }
